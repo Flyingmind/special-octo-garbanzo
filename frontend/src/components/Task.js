@@ -9,8 +9,9 @@ const Task = ({ task, onToggle, onDelete }) => {
                 checked={task.completed}
                 onChange={() => onToggle(task)}
             />
-            <span style={task.completed ? { textDecoration: "line-through" } : {}}>{task.title}</span>
-            {/* <span>{task.completed ? 'Completed' : 'Pending'}</span> */}
+            <span className={`task-title ${task.completed ? 'completed' : ''}`}>
+                {task.title}
+            </span>
             <button onClick={() => onDelete(task)}>Delete</button>
         </div>
     );

@@ -131,4 +131,19 @@ button:disabled {
 }
 
 
+
 /* Otros estilos como los que ya habíamos agregado antes */
+
+/* Estilo base del título de la tarea */
+.task-title {
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease, text-decoration 0.3s ease;  /* Suavizar los cambios en color y decoración */
+}
+
+/* Estilo cuando la tarea está completada (tachado) */
+.task-title.completed {
+  color: #aaa;  /* Cambiar el color a gris */
+  text-decoration: line-through;  /* Añadir la línea horizontal */
+}
+
